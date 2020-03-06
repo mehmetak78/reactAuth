@@ -1,0 +1,13 @@
+{
+  "name": "reactAuth",
+  "version": "1.0.0",
+  "description": "To Run Server     $ npm run server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
