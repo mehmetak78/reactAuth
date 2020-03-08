@@ -1,8 +1,15 @@
 const express = require("express");
-const cookieSession = require("cookie-session");
-const passport = require("passport");
-require("./routes/passportStrategies");
+
+//const cookieSession = require("cookie-session");
+
 const keys = require("./config/keys");
+
+let passport;
+
+if (keys.authPassportJWT || keys.authPassportSession) {
+    passport = require("passport");
+    require("./auth/passportStrategies");
+}
 
 const app = express();
 app.use(express.json({extended:false}));
@@ -10,20 +17,24 @@ app.get("/",(req,res) => {
     res.json({msg:"React Auth Sample"});
 });
 
-app.use(
+/*app.use(
     cookieSession({
                       maxAge: 30 * 24 * 60 * 60 * 1000,  //30 days
                       keys: [keys.cookieKey]
                   })
-);
-app.use(passport.initialize());
-app.use(passport.session());
+);*/
+
 
 // Define Routes
-//app.use("/auth/passportjwt", require("./routes/authPassportJWT"));
-//app.use("/auth/passportlocal", require("./routes/authPassportLocal"));
-//app.use("/auth/google", require("./routes/authPassportGoogle"));
-app.use("/authpassport", require("./routes/authPassport"));
+
+if (keys.authPassportJWT || keys.authPassportSession) {
+    app.use(passport.initialize());
+    app.use(passport.session());
+    app.use("/authpassport", require("./routes/authPassport"));
+}
+if (keys.jwtSecret) {
+    app.use("/authjwt", require("./routes/authJWT"));
+}
 app.use("/admin", require("./routes/admin"));
 
 const PORT = process.env.PORT || 5000;

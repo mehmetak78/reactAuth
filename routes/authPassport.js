@@ -133,15 +133,31 @@ router.post('/jwt/register',(req,res, next) => {
                     res.status(401).json(response)
                 }
                 else {
-                    const body = {id: user.id, username: user.username, name: user.name};
-                    const token = jwt.sign({user: body}, keys.jwtSecret);
                     user = insertDB("USER_TABLE",{...user, name});
-                    response = {
-                        message: "User register succesful",
-                        user: {id: user.id, username: user.username, name:name},
-                        token
+                    const payload = {
+                        user: {
+                            id: user.id,
+                            username: user.username,
+                            name: user.name
+                        }
                     };
-                    res.json(response);
+                    jwt.sign(payload, keys.jwtSecret, {expiresIn: 360000}, (err, token) => {
+                        if (err) {
+                            response = {
+                                message : err.message,
+                                user: null,
+                                token: null
+                            };
+                            return res.status(401).json(response);
+                        }
+                        response = {
+                            message: "User register succesful",
+                            user: {id: user.id, username: user.username, name:name},
+                            token
+                        };
+                        res.json(response);
+                    });
+
                     //console.log(findByColumn("USER_TABLE","username",user.username));
                 }
             });

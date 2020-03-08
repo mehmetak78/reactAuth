@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const passport = require("passport");
-const requireLogin = require("./requireLogin");
+const requireLogin = require("../auth/requireLogin");
 
 // /admin
 

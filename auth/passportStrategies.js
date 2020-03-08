@@ -100,7 +100,7 @@ passport.use('login', new LocalStrategy(
 
 passport.use( new JWTstrategy({
                                  secretOrKey : keys.jwtSecret,
-                                 jwtFromRequest : ExtractJWT.fromHeader('secret_token')
+                                 jwtFromRequest : ExtractJWT.fromHeader(keys.tokenName)
                              }, async (token, done) => {
     try {
         console.log("passport.use");

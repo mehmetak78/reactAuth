@@ -1,7 +1,11 @@
 module.exports = {
     googleClientID: "*********",
-    googleClientSecret: "***********",
-    jwtSecret: "***********",
-    cookieKey: "************",
-};
+    googleClientSecret: "*********",
+    jwtSecret: "*********",
+    cookieKey: "*********",
 
+    tokenName: "*********",
+    authPassportSession: true,
+    authPassportJWT: true,
+    authJWT: true
+};

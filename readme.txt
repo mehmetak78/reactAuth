@@ -7,6 +7,39 @@ To Run Client
 To Run Them Together
     $ npm run dev
 
+Postman : ReactAuth
+
+Using Passport
+    Session :
+        Google Login : (https://console.developers.google.com)(oAuthReact)
+            http://localhost:5000/authpassport/google
+
+        Local Register :
+            http://localhost:5000/authpassport/local/register
+        Local Login :
+            http://localhost:5000/authpassport/local/login
+
+    Token :
+        JWT Rwegister :
+            http://localhost:5000/authpassport/jwt/register
+        JWT Login :
+            http://localhost:5000/authpassport/jwt/login
+
+    Logout :
+        http://localhost:5000/authpassport/logout
+
+    Current User :
+        http://localhost:5000/authpassport/getuser
+
+    Admin Page :
+        http://localhost:5000/admin/adminHome
+
+
+Using JWT
+
+
+
+
 *************
 
 - Create an empty project called "oAuthReact"

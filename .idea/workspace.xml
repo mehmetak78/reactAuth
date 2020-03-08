@@ -2,18 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c1ea55b-2175-4087-99ea-4f4beb45fd55" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/routes/authJWT.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/dev_SAMPLE.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/dev_SAMPLE.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/authPassportGoogle.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authPassport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/authPassportJWT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/authPassportLocal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/requireLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/requireLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/authPassport.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authPassport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/passportStrategies.js" beforeDir="false" afterPath="$PROJECT_DIR$/auth/passportStrategies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/requireLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/auth/requireLogin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,6 +45,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/auth" />
       <recent name="$PROJECT_DIR$/routes" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -55,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583526617015</updated>
-      <workItem from="1583526618720" duration="19968000" />
+      <workItem from="1583526618720" duration="25304000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1583526957264</created>
@@ -71,7 +81,28 @@
       <option name="project" value="LOCAL" />
       <updated>1583697029555</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First Commit">
+      <created>1583699353048</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583699353048</updated>
+    </task>
+    <task id="LOCAL-00004" summary="First Commit">
+      <created>1583699366569</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583699366569</updated>
+    </task>
+    <task id="LOCAL-00005" summary="First Commit">
+      <created>1583699387869</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583699387869</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,9 +117,9 @@
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
     <state x="-1815" y="393" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583526888550" />
-    <state x="-1668" y="333" key="CommitChangelistDialog2" timestamp="1583699366478">
+    <state x="-1668" y="333" key="CommitChangelistDialog2" timestamp="1583699387786">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
-    <state x="-1668" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583699366478" />
+    <state x="-1668" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583699387786" />
   </component>
 </project>
