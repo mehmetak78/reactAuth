@@ -15,7 +15,7 @@ To Run Them Together
 - Change "package.json"
     Use "server.js" instead of "index.js"
 - Install packages
-    MEHMETs-MacBook-Pro:jwtReact mehmetak$ npm install express passport passport-google-oauth20@2 passport-localexpress-validator cookie-session bcryptjs
+    MEHMETs-MacBook-Pro:jwtReact mehmetak$ npm install express passport passport-google-oauth20@2 passport-local passport-jwt express-validator cookie-session bcryptjs jsonwebtoken
 - Dev dependencies
     MEHMETs-MacBook-Pro:jwtReact mehmetak$ npm install -D nodemon concurrently
 - Add scripts to "package.json"
