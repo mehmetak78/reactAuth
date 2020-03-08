@@ -5,7 +5,7 @@ module.exports = {
     cookieKey: "*********",
 
     tokenName: "*********",
-    authPassportSession: true,
-    authPassportJWT: true,
+    authPassportSession: false,
+    authPassportJWT: false,
     authJWT: true
 };

@@ -1,6 +1,6 @@
 const express = require("express");
 
-//const cookieSession = require("cookie-session");
+const cookieSession = require("cookie-session");
 
 const keys = require("./config/keys");
 const requireLogin = require("./authMiddlewares/requireLogin");
@@ -17,12 +17,12 @@ app.get("/",(req,res) => {
     res.json({msg:"React Auth Sample"});
 });
 
-/*app.use(
+app.use(
     cookieSession({
                       maxAge: 30 * 24 * 60 * 60 * 1000,  //30 days
                       keys: [keys.cookieKey]
                   })
-);*/
+);
 
 
 // Define Routes

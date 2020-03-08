@@ -36,9 +36,21 @@ Using Passport
 
 
 Using JWT
+    JWT Rwegister :
+        http://localhost:5000/authjwt/register
+    JWT Login :
+        http://localhost:5000/authjwt/login
 
+config/dev.js
+    googleClientID: "*********",            // google client Id.
+    googleClientSecret: "*********",        // googleClient Secret
+    jwtSecret: "*********",                 // jwt Secret (can be anything you write)
+    cookieKey: "*********",                 // cookie key. (can be anything you write) (used by passportgoogle strategy)
 
-
+    tokenName: "*********",     will be same that you will use in Header of the request. (can be anything)
+    authPassportSession: false,
+    authPassportJWT: false,
+    authJWT: true               just using JWT (preffered for api, mobile etc.) most common way.
 
 *************
 
