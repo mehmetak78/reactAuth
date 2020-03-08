@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c1ea55b-2175-4087-99ea-4f4beb45fd55" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/IN_MEMORY_DB/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/dev_SAMPLE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/keys.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/prod.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/authPassportGoogle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/authPassportJWT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/authPassportLocal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/requireLogin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/dev_SAMPLE.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/dev_SAMPLE.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/authPassportGoogle.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authPassport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/authPassportJWT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/authPassportLocal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/requireLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/requireLogin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583526617015</updated>
-      <workItem from="1583526618720" duration="17736000" />
+      <workItem from="1583526618720" duration="19968000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1583526957264</created>
@@ -70,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583526957264</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First Commit">
+      <created>1583697029555</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583697029555</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,9 +86,9 @@
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
     <state x="-1815" y="393" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583526888550" />
-    <state x="-1668" y="333" key="CommitChangelistDialog2" timestamp="1583526957170">
+    <state x="-1668" y="333" key="CommitChangelistDialog2" timestamp="1583697029453">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
-    <state x="-1668" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583526957170" />
+    <state x="-1668" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583697029453" />
   </component>
 </project>

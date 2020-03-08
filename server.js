@@ -20,9 +20,10 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Define Routes
-app.use("/auth/passportjwt", require("./routes/authPassportJWT"));
-app.use("/auth/passportlocal", require("./routes/authPassportLocal"));
-app.use("/auth/google", require("./routes/authPassportGoogle"));
+//app.use("/auth/passportjwt", require("./routes/authPassportJWT"));
+//app.use("/auth/passportlocal", require("./routes/authPassportLocal"));
+//app.use("/auth/google", require("./routes/authPassportGoogle"));
+app.use("/authpassport", require("./routes/authPassport"));
 app.use("/admin", require("./routes/admin"));
 
 const PORT = process.env.PORT || 5000;
