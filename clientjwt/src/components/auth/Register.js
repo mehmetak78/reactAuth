@@ -22,10 +22,6 @@ const Register = props => {
         if (isAuthenticated) {
             props.history.push("/");
         }
-        if (error === "User Already Exists") {
-            setAlert(error, "danger");
-            clearErrors();
-        }
         // eslint-disable-next-line
     }, [error, isAuthenticated, props.history]); // Dependency _> when the error isAuthenticated or props.history is changed
 

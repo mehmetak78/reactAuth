@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c1ea55b-2175-4087-99ea-4f4beb45fd55" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/clientjwt/src/setupProxy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientjwt/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientjwt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientjwt/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientjwt/src/components/auth/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/components/auth/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientjwt/src/components/layout/Alerts.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/components/layout/Alerts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientjwt/src/context/alert/AlertState.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/context/alert/AlertState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientjwt/src/context/auth/AuthReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/context/auth/AuthReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientjwt/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/context/auth/AuthState.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +85,7 @@
       <workItem from="1583735417096" duration="6159000" />
       <workItem from="1583750402383" duration="195000" />
       <workItem from="1583757494155" duration="103000" />
-      <workItem from="1583759642153" duration="1617000" />
+      <workItem from="1583759642153" duration="5395000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1583526957264</created>
@@ -163,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583760954807</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="jwtClient function added">
+      <created>1583761275711</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1583761275711</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

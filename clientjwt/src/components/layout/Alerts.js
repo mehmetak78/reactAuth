@@ -5,6 +5,9 @@ const Alerts = () => {
 
     const alertContext = useContext(AlertContext);
 
+    console.log("Alerts");
+    console.log(alertContext.alerts);
+
     return (
         alertContext.alerts.length > 0 &&
         alertContext.alerts.map(alert => (

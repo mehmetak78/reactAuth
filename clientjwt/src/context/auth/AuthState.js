@@ -1,7 +1,9 @@
-import React, {useReducer} from "react";
+import React, {useReducer, useContext} from "react";
 
 import AuthContext from "./AuthContext";
 import AuthReducer from "./AuthReducer";
+
+import AlertContext from "../alert/AlertContext";
 
 import setAuthToken from "../../utils/setAuthToken";
 
@@ -28,6 +30,8 @@ const AuthState = props => {
     };
 
     const [state, dispatch] = useReducer(AuthReducer, initialState);
+    const alertContext = useContext(AlertContext);
+    const {setAlert} = alertContext;
 
     // Load User
     const loadUser = async () => {
@@ -49,13 +53,15 @@ const AuthState = props => {
                 'Content-Type': 'application/json'
             }
         };
-
         try {
-            const res = await axios.post('/api/auth/register', formData, config);
+            const res = await axios.post('/authjwt/register', formData, config);
+            console.log(res.data);
             dispatch({type:REGISTER_SUCCESS, payload: res.data});
             await loadUser();
         }catch(err) {
-            dispatch({type:REGISTER_FAIL, payload: err.response.data.msg});
+            console.log(err.response.data.message);
+            dispatch({type:REGISTER_FAIL, payload: err.response.data.message});
+            setAlert(err.response.data.message,"danger");
         }
     };
 
