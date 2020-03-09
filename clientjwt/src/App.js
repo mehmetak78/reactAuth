@@ -11,6 +11,11 @@ import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateHome from "./components/pages/PrivateHome";
 import Alerts from "./components/layout/Alerts";
+import setAuthToken from "./utils/setAuthToken";
+
+if (localStorage.token) {
+    setAuthToken(localStorage.token)
+}
 
 function App() {
   return (
