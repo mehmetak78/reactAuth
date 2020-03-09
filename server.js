@@ -3,12 +3,12 @@ const express = require("express");
 const cookieSession = require("cookie-session");
 
 const keys = require("./config/keys");
-const requireLogin = require("./authMiddlewares/requireLogin");
+const requireLogin = require("./routes/requireLogin");
 let passport;
 
 if (keys.authPassportJWT || keys.authPassportSession) {
     passport = require("passport");
-    require("./authMiddlewares/passportStrategies");
+    require("./routes/passportStrategies");
 }
 
 const app = express();

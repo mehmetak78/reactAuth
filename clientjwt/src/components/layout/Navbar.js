@@ -32,6 +32,8 @@ const Navbar = props => {
     return (
         <div>
             <div className="navbar bg-primary">
+                <li><Link to="/home">Home</Link></li>
+                <li><Link to="/home2">Home2</Link></li>
                 <h1>
                     <i className={icon}/> {title}
                 </h1>

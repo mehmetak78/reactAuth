@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require("bcryptjs");
 const {insertDB,findByColumn} = require("../IN_MEMORY_DB");
 const keys = require("../config/keys");
-const requireLogin = require("../authMiddlewares/requireLogin");
+const requireLogin = require("./requireLogin");
 const {check, validationResult} = require("express-validator");
 
 const jwtSignIn = (user) => {
@@ -170,7 +170,12 @@ router.post("/login",
 router.get("/getuser", requireLogin, async (req, res) => {
     try {
         let user = findByColumn("USER_TABLE","username",req.user.username);
-        await res.json(user);
+        const response = {
+            message : "jwt getuser successfull",
+            user,
+            token: null
+        };
+        await res.json(response);
     }
     catch(err) {
         console.log(err.message);

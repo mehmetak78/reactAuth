@@ -10,6 +10,7 @@ import PrivateRoute from "./components/routing/PrivateRoute";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateHome from "./components/pages/PrivateHome";
+import PrivateHome2 from "./components/pages/PrivateHome2";
 import Alerts from "./components/layout/Alerts";
 import setAuthToken from "./utils/setAuthToken";
 import AppInit from "./AppInit";
@@ -32,6 +33,7 @@ function App() {
                               <Route exact path='/about' component={About} />
                               <Route exact path='/register' component={Register} />
                               <Route exact path='/login' component={Login} />
+                              <PrivateRoute exact path='/home2' component={PrivateHome2} />
                               <PrivateRoute path='/' component={PrivateHome} />
                           </Switch>
                       </div>

@@ -10,13 +10,14 @@ import {
 } from "../types";
 
 export default (state, action) => {
+    console.log("AuthRecucer:action.type:"+action.type);
     switch (action.type) {
         case USER_LOADED:
             return {
                 ...state,
                 isAuthenticated: true,
                 loading: false,
-                user: action.payload
+                user: action.payload.user
             };
         case REGISTER_SUCCESS:
         case LOGIN_SUCCESS:
