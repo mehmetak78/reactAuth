@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1c1ea55b-2175-4087-99ea-4f4beb45fd55" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/authJWT.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authJWT.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +72,8 @@
       <option name="presentableId" value="Default" />
       <updated>1583526617015</updated>
       <workItem from="1583526618720" duration="25874000" />
-      <workItem from="1583735417096" duration="5861000" />
+      <workItem from="1583735417096" duration="6159000" />
+      <workItem from="1583750402383" duration="195000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1583526957264</created>
@@ -125,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583704905220</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="jwtSignIn function added">
+      <created>1583741506809</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1583741506809</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +142,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -144,7 +152,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="jwtSignIn function added" />
+    <option name="LAST_COMMIT_MESSAGE" value="jwtSignIn function added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1815" y="393" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583526888550">
