@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require("bcryptjs");
 const {insertDB,findByColumn} = require("../IN_MEMORY_DB");
 const keys = require("../config/keys");
+const requireLogin = require("../authMiddlewares/requireLogin");
 const {check, validationResult} = require("express-validator");
 
 const jwtSignIn = (user) => {
@@ -51,8 +52,6 @@ router.post("/register",
     [
         check("username", "Please include a valid username")
             .not().isEmpty(),
-        check("username", "For testing ")
-            .isLength({max: 3}),
         check("password", "Please enter a password with 6 or more characters")
             .isLength({min: 3})
     ],
@@ -167,5 +166,16 @@ router.post("/login",
             res.status(401).json(response);
         }
     });
+
+router.get("/getuser", requireLogin, async (req, res) => {
+    try {
+        let user = findByColumn("USER_TABLE","username",req.user.username);
+        await res.json(user);
+    }
+    catch(err) {
+        console.log(err.message);
+        res.status(500).send("Server Error");
+    }
+});
 
 module.exports = router;

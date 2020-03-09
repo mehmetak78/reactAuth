@@ -12,6 +12,7 @@ import Login from "./components/auth/Login";
 import PrivateHome from "./components/pages/PrivateHome";
 import Alerts from "./components/layout/Alerts";
 import setAuthToken from "./utils/setAuthToken";
+import AppInit from "./AppInit";
 
 if (localStorage.token) {
     setAuthToken(localStorage.token)
@@ -23,6 +24,7 @@ function App() {
           <AuthState>
               <Router>
                   <Fragment>
+                      <AppInit/>
                       <Navbar/>
                       <div className="container">
                           <Alerts/>

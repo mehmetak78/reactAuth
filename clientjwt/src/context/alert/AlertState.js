@@ -19,7 +19,7 @@ const AlertState = props => {
             msg.errors.map(error => {
                 const id = createUUID();
                 dispatch({type:SET_ALERT, payload: {msg:error.msg, type, id}});
-                setTimeout(()=> dispatch({type:REMOVE_ALERT, payload: id}), timeout)
+                return setTimeout(()=> dispatch({type:REMOVE_ALERT, payload: id}), timeout);
             })
         }
         else {

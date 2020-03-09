@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c1ea55b-2175-4087-99ea-4f4beb45fd55" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/clientjwt/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientjwt/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientjwt/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientjwt/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientjwt/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clientjwt/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientjwt/src/AppInit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientjwt/src/components/auth/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/components/auth/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientjwt/src/components/layout/Alerts.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/components/layout/Alerts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientjwt/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientjwt/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientjwt/src/components/auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/components/auth/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientjwt/src/components/pages/PrivateHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/components/pages/PrivateHome.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientjwt/src/context/alert/AlertState.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/context/alert/AlertState.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientjwt/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/context/auth/AuthState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/authJWT.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authJWT.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583761275711</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="jwtClient function added">
+      <created>1583775348421</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1583775348421</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,10 +204,10 @@
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
     <state x="-1815" y="393" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583526888550" />
-    <state x="-1668" y="333" key="CommitChangelistDialog2" timestamp="1583704905103">
+    <state x="-1668" y="333" key="CommitChangelistDialog2" timestamp="1583775348265">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
-    <state x="-1668" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583704905103" />
+    <state x="-1668" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583775348265" />
     <state x="-1770" y="370" key="SettingsEditor" timestamp="1583773444796">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>

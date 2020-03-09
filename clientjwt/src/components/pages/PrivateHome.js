@@ -1,13 +1,11 @@
-import React, {useContext, useEffect} from 'react';
+import React, { useEffect} from 'react';
 
-
-import AuthContext from "../../context/auth/AuthContext";
 
 const PrivateHome = props => {
-    const authContext = useContext(AuthContext);
+
 
     useEffect(() => {
-        authContext.loadUser();
+        //authContext.loadUser();
         //eslint-disable-next-line
     }, []);                         // Dependency _> when the component is loaded.
 

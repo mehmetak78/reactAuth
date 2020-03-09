@@ -1,6 +1,6 @@
 import React, {useState, useContext, useEffect} from 'react';
 
-import AlertContext from "../../context/alert/AlertContext";
+
 import AuthContext from "../../context/auth/AuthContext";
 
 const Login = props => {
@@ -11,20 +11,14 @@ const Login = props => {
                                      });
     const {email, password} = user;
 
-    const alertContext = useContext(AlertContext);
     const authContext = useContext(AuthContext);
 
-    const {setAlert} = alertContext;
-    const {login, error, clearErrors, isAuthenticated} = authContext;
+    const {login, error,  isAuthenticated} = authContext;
     useEffect(() => {
         if (isAuthenticated) {
             props.history.push("/");
         }
-        if (error === "Invalid Credentials") {
-            setAlert(error, "danger");
-            clearErrors();
-        }
-        // eslint-disable-next-line
+    // eslint-disable-next-line
     }, [error, isAuthenticated, props.history]); // Dependency _> when the error isAuthenticated or props.history is changed
 
     const onChange = (e) => {

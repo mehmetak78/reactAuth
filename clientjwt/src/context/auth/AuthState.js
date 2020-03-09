@@ -24,7 +24,7 @@ const AuthState = props => {
     const initialState = {
         token: localStorage.getItem("token"),
         isAuthenticated: null,
-        loading: true,
+        loading: false,
         user: null,
         error: null
     };
@@ -36,13 +36,14 @@ const AuthState = props => {
     // Load User
     const loadUser = async () => {
         if (localStorage.token) {
-            setAuthToken(localStorage.token)
+            setAuthToken(localStorage.token);
         }
         try {
-            const res = await axios.get("/api/auth/currentuser");
+            const res = await axios.get("/authjwt/getuser");
             dispatch({type: USER_LOADED, payload: res.data});
-        } catch (e) {
-            dispatch({type: AUTH_ERROR})
+        } catch (err) {
+            //setAlert(err.response.data.message,"danger");
+            dispatch({type:AUTH_ERROR, payload: err.response.data.message});
         }
     };
 
@@ -55,7 +56,6 @@ const AuthState = props => {
         };
         try {
             const res = await axios.post('/authjwt/register', formData, config);
-            console.log(res.data);
             dispatch({type:REGISTER_SUCCESS, payload: res.data});
             await loadUser();
         }catch(err) {
@@ -71,15 +71,15 @@ const AuthState = props => {
                 'Content-Type': 'application/json'
             }
         };
-
-        console.log("Login");
         try {
-            const res = await axios.post('/api/auth/login', formData, config);
+            const res = await axios.post('/authjwt/login', formData, config);
             console.log(res.data);
             dispatch({type:LOGIN_SUCCESS, payload: res.data});
             await loadUser();
         }catch(err) {
-            dispatch({type:LOGIN_FAIL, payload: err.response.data.msg});
+            console.log(err.response.data.message);
+            setAlert(err.response.data.message,"danger");
+            dispatch({type:LOGIN_FAIL, payload: err.response.data.message});
         }
     };
     // Logout User
