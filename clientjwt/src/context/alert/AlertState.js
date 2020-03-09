@@ -15,12 +15,18 @@ const AlertState = props => {
     const [state, dispatch] = useReducer(AlertReducer, initialState);
 
     const setAlert = (msg,type, timeout=2000) => {
-        console.log("setAlert");
-        console.log(msg);
-        const id = createUUID();
-        dispatch({type:SET_ALERT, payload: {msg, type, id}});
-
-        setTimeout(()=> dispatch({type:REMOVE_ALERT, payload: id}), timeout)
+        if (msg.errors) {
+            msg.errors.map(error => {
+                const id = createUUID();
+                dispatch({type:SET_ALERT, payload: {msg:error.msg, type, id}});
+                setTimeout(()=> dispatch({type:REMOVE_ALERT, payload: id}), timeout)
+            })
+        }
+        else {
+            const id = createUUID();
+            dispatch({type: SET_ALERT, payload: {msg, type, id}});
+            setTimeout(()=> dispatch({type:REMOVE_ALERT, payload: id}), timeout)
+        }
     };
 
     return <AlertContext.Provider

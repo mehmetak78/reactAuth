@@ -59,9 +59,8 @@ const AuthState = props => {
             dispatch({type:REGISTER_SUCCESS, payload: res.data});
             await loadUser();
         }catch(err) {
-            console.log(err.response.data.message);
-            dispatch({type:REGISTER_FAIL, payload: err.response.data.message});
             setAlert(err.response.data.message,"danger");
+            dispatch({type:REGISTER_FAIL, payload: err.response.data.message});
         }
     };
 

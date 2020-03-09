@@ -51,6 +51,8 @@ router.post("/register",
     [
         check("username", "Please include a valid username")
             .not().isEmpty(),
+        check("username", "For testing ")
+            .isLength({max: 3}),
         check("password", "Please enter a password with 6 or more characters")
             .isLength({min: 3})
     ],

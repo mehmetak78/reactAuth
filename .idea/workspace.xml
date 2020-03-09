@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c1ea55b-2175-4087-99ea-4f4beb45fd55" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/clientjwt/src/setupProxy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientjwt/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientjwt/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientjwt/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientjwt/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientjwt/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientjwt/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientjwt/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientjwt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientjwt/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientjwt/src/components/auth/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/components/auth/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientjwt/src/components/layout/Alerts.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/components/layout/Alerts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientjwt/src/context/alert/AlertState.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/context/alert/AlertState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientjwt/src/context/auth/AuthReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/context/auth/AuthReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientjwt/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/context/auth/AuthState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/authJWT.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authJWT.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +31,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1Yloc6SXY39csGP7oScVOTwQ7xd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -44,32 +48,22 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/auth" />
-      <recent name="$PROJECT_DIR$/routes" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/clientjwt/src" />
       <recent name="D:\Mehmet Ak\Mehmet\React\reactAuth\clientjwt\src" />
       <recent name="D:\Mehmet Ak\Mehmet\React\reactAuth\clientjwt\src\components" />
       <recent name="D:\Mehmet Ak\Mehmet\React\reactAuth\config" />
       <recent name="$PROJECT_DIR$/routes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/clientjwt" />
+      <recent name="$PROJECT_DIR$/auth" />
+      <recent name="$PROJECT_DIR$/routes" />
       <recent name="$PROJECT_DIR$" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -212,5 +206,13 @@
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
     <state x="-1668" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583704905103" />
+    <state x="-1770" y="370" key="SettingsEditor" timestamp="1583773444796">
+      <screen x="-2560" y="23" width="2560" height="1417" />
+    </state>
+    <state x="-1770" y="370" key="SettingsEditor/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583773444796" />
+    <state x="-1474" y="655" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583773366109">
+      <screen x="-2560" y="23" width="2560" height="1417" />
+    </state>
+    <state x="-1474" y="655" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583773366109" />
   </component>
 </project>

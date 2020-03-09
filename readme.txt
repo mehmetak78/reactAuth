@@ -81,3 +81,32 @@ config/dev.js
         - MEHMETs-MacBook-Pro:contact-keeper mehmetak$ git commit -m "Initial Commit"
     - Share in GitHub
         VCS/Import Into Version Control/Share Project in Github
+
+
+{
+    "message": "User Already Exists",
+    "user": {
+        "id": 2,
+        "name": "Mehmet",
+        "username": "mehmetak78@hotmail.c",
+        "password": "$2a$10$TBKNioTdpyjpB6eP0rx1DuEY0HyCrY50btFZAY79fAOatn70UQg3q"
+    },
+    "token": null
+}
+{
+    "message": {
+        "errors": [
+            {
+                "value": "me",
+                "msg": "Please enter a password with 6 or more characters",
+                "param": "password",
+                "location": "body"
+            }
+        ]
+    },
+    "user": null,
+    "token": null
+}
+
+
+
