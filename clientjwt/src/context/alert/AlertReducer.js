@@ -4,6 +4,7 @@ import {
 } from "../types";
 
 export default (state, action) => {
+    console.log("AlertReducer:action.type:"+action.type);
     switch (action.type) {
         case SET_ALERT:
             return [...state, action.payload];

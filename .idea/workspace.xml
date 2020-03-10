@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1c1ea55b-2175-4087-99ea-4f4beb45fd55" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientjwt/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientjwt/src/components/pages/PrivateHome.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/components/pages/PrivateHome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientjwt/src/components/pages/PrivateHome2.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/components/pages/PrivateHome2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientjwt/src/context/alert/AlertReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/context/alert/AlertReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clientjwt/src/context/auth/AuthReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/context/auth/AuthReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientjwt/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/context/auth/AuthState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientjwt/src/context/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/context/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientjwt/src/setupProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/setupProxy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientjwt/src/utils/setAuthToken.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/authJWT.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authJWT.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1583786346781</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="jwtClient function added">
+      <created>1583871927341</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1583871927341</updated>
+    </task>
+    <task id="LOCAL-00019" summary="jwtClient function added">
+      <created>1583871999214</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1583871999214</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,18 +233,18 @@
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
     <state x="-1815" y="393" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583871952757" />
-    <state x="-1668" y="333" key="CommitChangelistDialog2" timestamp="1583871927227">
+    <state x="-1668" y="333" key="CommitChangelistDialog2" timestamp="1583871999115">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
-    <state x="-1668" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583871927227" />
+    <state x="-1668" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583871999115" />
     <state x="-1770" y="370" key="SettingsEditor" timestamp="1583773444796">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
     <state x="-1770" y="370" key="SettingsEditor/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583773444796" />
-    <state x="-1679" y="471" key="Vcs.Push.Dialog.v2" timestamp="1583786383492">
+    <state x="-1679" y="471" key="Vcs.Push.Dialog.v2" timestamp="1583872002500">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
-    <state x="-1679" y="471" key="Vcs.Push.Dialog.v2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583786383492" />
+    <state x="-1679" y="471" key="Vcs.Push.Dialog.v2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583872002500" />
     <state x="-1474" y="655" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583773366109">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>

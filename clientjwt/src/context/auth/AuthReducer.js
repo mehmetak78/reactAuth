@@ -9,7 +9,7 @@ import {
 } from "../types";
 
 export default (state, action) => {
-    console.log("AuthRecucer:action.type:"+action.type);
+    console.log("AuthReducer:action.type:"+action.type);
     switch (action.type) {
         case USER_LOAD_SUCCESS:
         case REGISTER_SUCCESS:
