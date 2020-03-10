@@ -5,19 +5,16 @@ import AuthReducer from "./AuthReducer";
 
 import AlertContext from "../alert/AlertContext";
 
-import setAuthToken from "../../utils/setAuthToken";
-
 import axios from "axios";
 
 import {
     REGISTER_SUCCESS,
     REGISTER_FAIL,
-    USER_LOADED,
-    AUTH_ERROR,
+    USER_LOAD_SUCCESS,
+    USER_LOAD_FAIL,
     LOGIN_SUCCESS,
     LOGIN_FAIL,
-    LOGOUT,
-    CLEAR_ERRORS
+    LOGOUT_SUCCESS
 } from "../types";
 
 const AuthState = props => {
@@ -25,8 +22,7 @@ const AuthState = props => {
         token: localStorage.getItem("token"),
         isAuthenticated: null,
         loading: false,
-        user: null,
-        error: null
+        user: null
     };
 
     const [state, dispatch] = useReducer(AuthReducer, initialState);
@@ -36,28 +32,22 @@ const AuthState = props => {
     // Load User
     const loadUser = async () => {
         if (localStorage.token) {
-            setAuthToken(localStorage.token);
-        }
-        try {
-            const res = await axios.get("/authjwt/getuser");
-            dispatch({type: USER_LOADED, payload: res.data});
-        } catch (err) {
-            //setAlert(err.response.data.message,"danger");
-            dispatch({type:AUTH_ERROR, payload: err.response.data.message});
+            axios.defaults.headers.common["x-auth-token"] = localStorage.token;
+            try {
+                const res = await axios.get("/authjwt/getuser");
+                dispatch({type: USER_LOAD_SUCCESS, payload: {...res.data, token: localStorage.token}});
+            } catch (err) {
+                dispatch({type: USER_LOAD_FAIL, payload: err.response.data.message});
+            }
         }
     };
 
     // Register User
     const register = async (formData) => {
-        const config = {
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        };
         try {
-            const res = await axios.post('/authjwt/register', formData, config);
+            const res = await axios.post('/authjwt/register', formData);
+            axios.defaults.headers.common["x-auth-token"] = res.data.token;
             dispatch({type:REGISTER_SUCCESS, payload: res.data});
-            await loadUser();
         }catch(err) {
             setAlert(err.response.data.message,"danger");
             dispatch({type:REGISTER_FAIL, payload: err.response.data.message});
@@ -66,30 +56,21 @@ const AuthState = props => {
 
     // Login User
     const login = async (formData) => {
-        const config = {
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        };
         try {
-            const res = await axios.post('/authjwt/login', formData, config);
-            console.log(res.data);
+            const res = await axios.post('/authjwt/login', formData);
+            axios.defaults.headers.common["x-auth-token"] = res.data.token;
             dispatch({type:LOGIN_SUCCESS, payload: res.data});
-            await loadUser();
         }catch(err) {
-            console.log(err.response.data.message);
             setAlert(err.response.data.message,"danger");
             dispatch({type:LOGIN_FAIL, payload: err.response.data.message});
         }
     };
     // Logout User
     const logout = () => {
-        dispatch({type:LOGOUT});
+        delete axios.defaults.headers.common["x-auth-token"];
+        dispatch({type:LOGOUT_SUCCESS});
     };
-    // clear Errors
-    const clearErrors = () => {
-        dispatch({type:CLEAR_ERRORS});
-    };
+
     return <AuthContext.Provider
         value={
             {
@@ -97,12 +78,10 @@ const AuthState = props => {
                 isAuthenticated: state.isAuthenticated,
                 loading: state.loading,
                 user: state.user,
-                error: state.error,
                 register,
                 loadUser,
                 login,
-                logout,
-                clearErrors
+                logout
             }
         }>
         {props.children}

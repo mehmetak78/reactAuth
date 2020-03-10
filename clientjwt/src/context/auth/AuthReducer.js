@@ -1,24 +1,17 @@
 import {
     REGISTER_SUCCESS,
     REGISTER_FAIL,
-    USER_LOADED,
-    AUTH_ERROR,
+    USER_LOAD_SUCCESS,
+    USER_LOAD_FAIL,
     LOGIN_SUCCESS,
     LOGIN_FAIL,
-    LOGOUT,
-    CLEAR_ERRORS
+    LOGOUT_SUCCESS
 } from "../types";
 
 export default (state, action) => {
     console.log("AuthRecucer:action.type:"+action.type);
     switch (action.type) {
-        case USER_LOADED:
-            return {
-                ...state,
-                isAuthenticated: true,
-                loading: false,
-                user: action.payload.user
-            };
+        case USER_LOAD_SUCCESS:
         case REGISTER_SUCCESS:
         case LOGIN_SUCCESS:
             localStorage.setItem("token", action.payload.token);
@@ -31,8 +24,8 @@ export default (state, action) => {
             };
         case REGISTER_FAIL:
         case LOGIN_FAIL:
-        case AUTH_ERROR:
-        case LOGOUT:
+        case USER_LOAD_FAIL:
+        case LOGOUT_SUCCESS:
             localStorage.removeItem("token");
             return {
                 ...state,
@@ -41,11 +34,6 @@ export default (state, action) => {
                 loading: false,
                 user: null,
                 error: action.payload
-            };
-        case CLEAR_ERRORS:
-            return {
-                ...state,
-                error: null
             };
         default:
             return state;

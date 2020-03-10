@@ -172,7 +172,7 @@ router.get("/getuser", requireLogin, async (req, res) => {
         let user = findByColumn("USER_TABLE","username",req.user.username);
         const response = {
             message : "jwt getuser successfull",
-            user,
+            user: {id:user.id, name: user.name, username:user.username},
             token: null
         };
         await res.json(response);

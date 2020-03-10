@@ -12,12 +12,7 @@ import Login from "./components/auth/Login";
 import PrivateHome from "./components/pages/PrivateHome";
 import PrivateHome2 from "./components/pages/PrivateHome2";
 import Alerts from "./components/layout/Alerts";
-import setAuthToken from "./utils/setAuthToken";
 import AppInit from "./AppInit";
-
-if (localStorage.token) {
-    setAuthToken(localStorage.token)
-}
 
 function App() {
   return (
