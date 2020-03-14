@@ -2,10 +2,12 @@ To Run Server
     $ npm run server
 
 To Run Client
-    $ npm run client
-
-To Run Them Together
-    $ npm run dev
+    ClientJWT : (preferred one) (not using session, using token)
+        $ cd clientjwt
+        $ npm start
+    ClientPassport :
+        $ cd clientpassport
+        $ npm start
 
 Postman : ReactAuth
 
