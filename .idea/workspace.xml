@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1c1ea55b-2175-4087-99ea-4f4beb45fd55" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientjwt/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientjwt/src/components/layout/Navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583872066560</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="jwtClient function added">
+      <created>1583872154622</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1583872154622</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,18 +245,18 @@
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
     <state x="-1815" y="393" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583871952757" />
-    <state x="-1668" y="333" key="CommitChangelistDialog2" timestamp="1583872066460">
+    <state x="-1668" y="333" key="CommitChangelistDialog2" timestamp="1583872154535">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
-    <state x="-1668" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583872066460" />
+    <state x="-1668" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583872154535" />
     <state x="-1770" y="370" key="SettingsEditor" timestamp="1583773444796">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
     <state x="-1770" y="370" key="SettingsEditor/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583773444796" />
-    <state x="-1679" y="471" key="Vcs.Push.Dialog.v2" timestamp="1583872069435">
+    <state x="-1679" y="471" key="Vcs.Push.Dialog.v2" timestamp="1583872157736">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
-    <state x="-1679" y="471" key="Vcs.Push.Dialog.v2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583872069435" />
+    <state x="-1679" y="471" key="Vcs.Push.Dialog.v2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583872157736" />
     <state x="-1474" y="655" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583773366109">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
