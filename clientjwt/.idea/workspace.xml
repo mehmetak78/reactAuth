@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f966fcab-8e33-4b64-844f-ee96a3f941f7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/clientjwt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/components/layout/Alerts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/components/layout/Navbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/components/layout/Spinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/components/layout/spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/components/pages/About.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/components/pages/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/components/pages/PrivateHome1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/components/pages/PrivateHome2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/components/pages/PublicHome.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/components/pages/Register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/components/routing/AppInit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/components/routing/PrivateRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/components/routing/PublicRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/context/alert/AlertContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/context/alert/AlertReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/context/alert/AlertState.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/context/auth/AuthContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/context/auth/AuthReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/context/auth/AuthState.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/context/types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/setupProxy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clientpassport/src/utils/createUUID.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/auth/AuthReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/auth/AuthReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/auth/AuthState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clientpassport/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../clientpassport/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clientpassport/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../clientpassport/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clientpassport/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../clientpassport/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clientpassport/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../clientpassport/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clientpassport/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../clientpassport/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../routes/authPassport.js" beforeDir="false" afterPath="$PROJECT_DIR$/../routes/authPassport.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1Z8FZxnvuLlP0W6AoIBuiMS9gVg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f966fcab-8e33-4b64-844f-ee96a3f941f7" name="Default Changelist" comment="" />
+      <created>1584212873943</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584212873943</updated>
+      <workItem from="1584212876025" duration="2137000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

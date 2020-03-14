@@ -14,7 +14,8 @@ import {
     USER_LOAD_FAIL,
     LOGIN_SUCCESS,
     LOGIN_FAIL,
-    LOGOUT_SUCCESS
+    LOGOUT_SUCCESS,
+    LOGOUT_FAIL
 } from "../types";
 
 const AuthState = props => {
@@ -67,8 +68,13 @@ const AuthState = props => {
     };
     // Logout User
     const logout = () => {
-        delete axios.defaults.headers.common["x-auth-token"];
-        dispatch({type:LOGOUT_SUCCESS});
+        try {
+            delete axios.defaults.headers.common["x-auth-token"];
+            dispatch({type: LOGOUT_SUCCESS});
+        }catch(err) {
+            setAlert(err.response.data.message,"danger");
+            dispatch({type:LOGOUT_FAIL, payload: err.response.data.message});
+        }
     };
 
     return <AuthContext.Provider

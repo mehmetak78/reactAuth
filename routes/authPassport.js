@@ -4,6 +4,7 @@ const passport = require("passport");
 const jwt = require('jsonwebtoken');
 const {insertDB,} = require("../IN_MEMORY_DB");
 const keys = require("../config/keys");
+const {check, validationResult} = require("express-validator");
 
 // Google
 router.get("/google", passport.authenticate("google", {scope: ["profile", "email"]}));
@@ -11,20 +12,35 @@ router.get("/google", passport.authenticate("google", {scope: ["profile", "email
 router.get("/google/callback", passport.authenticate("google"),
            (req,res) => {
                console.log("Inside the callback");
-               res.redirect("/admin/adminHome");
+               res.redirect("/home1");
            }
 );
 
 // Local
 
-router.post('/local/register',(req,res, next) => {
+router.post('/local/register',
+            [
+                check("username", "Please include a valid username")
+                    .not().isEmpty(),
+                check("password", "Please enter a password with 6 or more characters")
+                    .isLength({min: 3})
+            ],
+            (req,res, next) => {
     const name = req.body.name;
     let response = {
         message: null,
         user: null,
         token: null
     };
-
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        response = {
+            message : {errors: errors.array()},
+            user: null,
+            token: null
+        };
+        return res.status(401).json(response);
+    }
     passport.authenticate('register', { session : false}, (error, user) => {
         if (error) {
             response = {
@@ -61,13 +77,30 @@ router.post('/local/register',(req,res, next) => {
 
 });
 
-router.post('/local/login',(req,res, next) => {
+router.post('/local/login',
+            [
+                check("username", "Please include a valid username")
+                    .not().isEmpty(),
+                check("password", "Please enter a password with 6 or more characters")
+                    .isLength({min: 3})
+            ],
+            (req,res, next) => {
 
     let response = {
         message: null,
         user: null,
         token: null
     };
+
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        response = {
+            message : {errors: errors.array()},
+            user: null,
+            token: null
+        };
+        return res.status(401).json(response);
+    }
 
     passport.authenticate('login', { session : false}, (error, user) => {
         if (error) {
