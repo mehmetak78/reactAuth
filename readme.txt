@@ -3,9 +3,11 @@ To Run Server
 
 To Run Client
     ClientJWT : (preferred one) (not using session, using token)
+        Check Congif : authJWT: true
         $ cd clientjwt
         $ npm start
     ClientPassport :
+        Check config : authPassportSession: true
         $ cd clientpassport
         $ npm start
 
@@ -51,7 +53,7 @@ config/dev.js
 
     tokenName: "*********",     will be same that you will use in Header of the request. (can be anything)
     authPassportSession: false,
-    authPassportJWT: false,
+    authPassportJWT: false,     (no client sample coded for this)
     authJWT: true               just using JWT (preffered for api, mobile etc.) most common way.
 
 *************
