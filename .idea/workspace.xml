@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1c1ea55b-2175-4087-99ea-4f4beb45fd55" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientpassport/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientpassport/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientpassport/src/components/routing/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientpassport/src/components/routing/PrivateRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientpassport/src/context/auth/AuthState.js" beforeDir="false" afterPath="$PROJECT_DIR$/clientpassport/src/context/auth/AuthState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientpassport/src/components/pages/PublicHome.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientpassport/src/components/routing/PublicRoute.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +69,7 @@
       <workItem from="1583750402383" duration="195000" />
       <workItem from="1583757494155" duration="103000" />
       <workItem from="1583759642153" duration="5395000" />
-      <workItem from="1584208725449" duration="6056000" />
+      <workItem from="1584208725449" duration="6157000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1583526957264</created>
@@ -234,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584215113659</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="jwtClient function added">
+      <created>1584215566628</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1584215566628</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,10 +269,10 @@
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
     <state x="-1815" y="393" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1583871952757" />
-    <state x="-1668" y="333" key="CommitChangelistDialog2" timestamp="1584215113457">
+    <state x="-1668" y="333" key="CommitChangelistDialog2" timestamp="1584215566519">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
-    <state x="-1668" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1584215113457" />
+    <state x="-1668" y="333" key="CommitChangelistDialog2/0.23.1440.836/-4480.23.1920.1177/-2560.23.2560.1417@-2560.23.2560.1417" timestamp="1584215566519" />
     <state x="-1770" y="370" key="SettingsEditor" timestamp="1583773444796">
       <screen x="-2560" y="23" width="2560" height="1417" />
     </state>
